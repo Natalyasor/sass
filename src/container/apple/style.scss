@@ -1,0 +1,32 @@
+@use '../../lib/service.scss' as s;
+
+.header_container {
+   display: flex;
+   padding: s.space(4) 0; 
+   justify-content: space-between;
+   background-color: color('backgroundDark');
+}
+.header {
+    @extend .section;
+    background-color: s.color('backgroundDark');
+}
+.header_content {
+    @extend .section_content;   
+
+    display: flex;
+   padding: s.space(4) 0; 
+   justify-content: space-between;
+}
+.header_block {
+    display: flex;
+    gap: s.space(8);
+}
+.header_icon {
+    @include s.click;
+}
+.header_link {
+    text-decoration: none;
+
+
+@include s.click;
+}

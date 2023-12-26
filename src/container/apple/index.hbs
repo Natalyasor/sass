@@ -1,0 +1,32 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+<div class="page">
+  <div class="header">
+    {{#with header}}
+    <header class="header_content">
+      <div class="header_block">
+        <img src="/svg/apple.svg" alt="Apple" class="header_icon">
+        <nav class="header_block">
+          {{#each links}}
+          <a href="{{url}}" class="header_link">{{text}}</a>
+          {{/each}}
+        </nav>
+      </div>
+      <div class="header_block">
+        <img src="/svg/search.svg" alt="Search" class="header_icon">
+        <img src="/svg/profile.svg" alt="Profile" class="header_icon">
+      </div>
+    </header>
+    {{/with}}
+  </div>
+</div>
+
+{{!
+Цей код містить лише те, що буде виводитись в
+
+<body>
+  Адже наш layout/default.hbs має вже структуру HTML
+  }}
