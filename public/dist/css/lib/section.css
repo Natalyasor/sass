@@ -1,17 +1,43 @@
-/* Error: Expected string.
- *   ,
- * 1 | @use ./space.scss as s;
- *   |      ^
- *   '
- *   src\lib\section.scss 1:6  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected string.\a   \2577 \a 1 \2502  @use ./space.scss as s;\d\a   \2502       ^\a   \2575 \a   src\\lib\\section.scss 1:6  root stylesheet";
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
 }
+
+.section_content {
+  max-width: 1200px;
+  width: 100%;
+}
+@media all and (width < 1440px) {
+  .section_content {
+    max-width: 1100px;
+  }
+}
+@media all and (width < 1200px) {
+  .section_content {
+    max-width: 900px;
+  }
+}
+@media all and (width < 620px) {
+  .section_content {
+    max-width: 700px;
+  }
+}
+@media all and (width < 320px) {
+  .section_content {
+    max-width: 500px;
+  }
+}
+
+.section_double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3 1fr 1fr);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/*# sourceMappingURL=section.css.map */

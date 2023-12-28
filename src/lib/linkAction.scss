@@ -1,0 +1,9 @@
+@use './var.scss';
+@mixin linkAction {
+color: var.color('primary');
+color: var.color('#424245');
+&::after {
+    content: '>';
+    margin-left: 12px;
+}
+}
