@@ -40,6 +40,15 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+.footer_content {
+  display: grid;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
 .page {
   font-family: "Roboto", sans-serif;
   font-size: 16px;

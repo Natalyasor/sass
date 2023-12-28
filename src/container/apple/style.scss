@@ -195,7 +195,10 @@ background-size: cover;
     .footer {
         padding: 40px;
         gap: 12px;
-      justify-content: center;
-      align-items: center;
-     
-    }
+        weight: 100%;
+      .title {
+        padding-bottom: 16px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+     }

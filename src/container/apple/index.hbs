@@ -153,10 +153,12 @@
   </div>
   <div class="footer">
     {{#each footer}}
-
-    {{#each links}}
-    <a href="{{url}}" class="product_link">{{text}}</a>
-    {{/each}}
+    <div class="footer_content">
+      <h1 class="title">{{title}}</h1>
+      {{#each links}}
+      <a href="{{url}}" class="product_link">{{text}}</a>
+      {{/each}}
+    </div>
     {{/each}}
   </div>
 
